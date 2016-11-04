@@ -280,7 +280,8 @@ app.constant('ROUTERS', [{
             "page": "Farmacias"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/form.html"
-    },  {
+    }
+},  {
     "repositorio.repositorio.marcas": {
         "url": "/marcas",
         "data": {
@@ -383,6 +384,5 @@ app.constant('ROUTERS', [{
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/proveedores/form.html"
     }
-}, 
 }
 ]);

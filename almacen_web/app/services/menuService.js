@@ -112,7 +112,7 @@ app
                 title: 'DetalleCompras',
                 state: 'repositorio.repositorio.detalleCompras',
                 type: 'link'
-                {
+            },  {
                 title: 'DetalleOses',
                 state: 'repositorio.repositorio.detalleOses',
                 type: 'link'
@@ -135,9 +135,8 @@ app
             },  {
                 title: 'Proveedores',
                 state: 'repositorio.repositorio.proveedores',
-                type: 'link'  
-            },  
-            } ]
+                type: 'link'
+            }  ]
         }]
     });
 
