@@ -128,9 +128,14 @@ app
                 title: 'OrdenSalidas',
                 state: 'repositorio.repositorio.ordenSalidas',
                 type: 'link'
-
-
-                
+            },  {
+                title: 'Productos',
+                state: 'repositorio.repositorio.productos',
+                type: 'link'
+            },  {
+                title: 'Proveedores',
+                state: 'repositorio.repositorio.proveedores',
+                type: 'link'  
             },  
             } ]
         }]

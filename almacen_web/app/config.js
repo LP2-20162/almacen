@@ -332,11 +332,57 @@ app.constant('ROUTERS', [{
         "templateUrl": "almacen_web_apps/repositorio_web/views/ordenSalidas/form.html"
     }
 
+},  {
+    "repositorio.repositorio.productos": {
+        "url": "/productos",
+        "data": {
+            "section": "Repositorio",
+            "page": "Productos"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/productos/index.html"
+    },
+    "repositorio.repositorio.autoresNew7": {
+        "url": "/productos/new",
+        "data": {
+            "section": "Repositorio",
+            "page": "Productos"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/productos/form.html"
+    },
+    "repositorio.repositorio.autoresEdit6": {
+        "url": "/productos/:id/edit",
+        "data": {
+            "section": "Repositorio",
+            "page": "Productos"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/productos/form.html"
+    }
 
-
-
-    
-
+},  {
+    "repositorio.repositorio.proveedores": {
+        "url": "/proveedores",
+        "data": {
+            "section": "Repositorio",
+            "page": "Proveedores"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/proveedores/index.html"
+    },
+    "repositorio.repositorio.autoresNew8": {
+        "url": "/proveedores/new",
+        "data": {
+            "section": "Repositorio",
+            "page": "Proveedores"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/proveedores/form.html"
+    },
+    "repositorio.repositorio.autoresEdit8": {
+        "url": "/proveedores/:id/edit",
+        "data": {
+            "section": "Repositorio",
+            "page": "Proveedores"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/proveedores/form.html"
+    }
 }, 
 }
 ]);
