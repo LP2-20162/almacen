@@ -112,7 +112,15 @@ app
                 title: 'DetalleCompras',
                 state: 'repositorio.repositorio.detalleCompras',
                 type: 'link'
-
+                {
+                title: 'DetalleOses',
+                state: 'repositorio.repositorio.detalleOses',
+                type: 'link'
+            },  {
+                title: 'Farmacias',
+                state: 'repositorio.repositorio.farmacias',
+                type: 'link'
+            },  {
 
 
                 

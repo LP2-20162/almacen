@@ -203,6 +203,84 @@ app.constant('ROUTERS', [{
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/compras/form.html"
     }
+    
+},  {
+    "repositorio.repositorio.detalleCompras": {
+        "url": "/detalleCompras",
+        "data": {
+            "section": "Repositorio",
+            "page": "DetalleCompras"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/detalleCompras/index.html"
+    },
+    "repositorio.repositorio.autoresNew2": {
+        "url": "/detalleCompras/new",
+        "data": {
+            "section": "Repositorio",
+            "page": "DetalleCompras"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/detalleCompras/form.html"
+    },
+    "repositorio.repositorio.autoresEdit2": {
+        "url": "/detalleCompras/:id/edit",
+        "data": {
+            "section": "Repositorio",
+            "page": "DetalleCompras"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/detalleCompras/form.html"
+    }
+
+},  {
+    "repositorio.repositorio.detalleOses": {
+        "url": "/detalleOses",
+        "data": {
+            "section": "Repositorio",
+            "page": "DetalleOses"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/detalleOses/index.html"
+    },
+    "repositorio.repositorio.autoresNew3": {
+        "url": "/detalleOses/new",
+        "data": {
+            "section": "Repositorio",
+            "page": "DetalleOses"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/detalleOses/form.html"
+    },
+    "repositorio.repositorio.autoresEdit3": {
+        "url": "/detalleOses/:id/edit",
+        "data": {
+            "section": "Repositorio",
+            "page": "DetalleOses"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/detalleOses/form.html"
+    }
+
+},  {
+    "repositorio.repositorio.farmacias": {
+        "url": "/farmacias",
+        "data": {
+            "section": "Repositorio",
+            "page": "Farmacias"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/index.html"
+    },
+    "repositorio.repositorio.autoresNew4": {
+        "url": "/farmacias/new",
+        "data": {
+            "section": "Repositorio",
+            "page": "Farmacias"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/form.html"
+    },
+    "repositorio.repositorio.autoresEdit4": {
+        "url": "/farmacias/:id/edit",
+        "data": {
+            "section": "Repositorio",
+            "page": "Farmacias"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/form.html"
+    }
 
 
 
