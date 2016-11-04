@@ -1,0 +1,78 @@
+<div ng-cloak>
+    <md-content class="md-padding" layout-xs="column" layout="row">
+        <div flex-xs flex-gt-xs="100" layout="column">
+            <form name="dForm" role="form" ng-controller="ordenSalidaSaveCtrl">
+                <md-card>
+                    <md-card-header>
+                        <md-card-avatar>
+                            <img class="md-user-avatar" src="media/img/list/60.jpeg" />
+                        </md-card-avatar>
+                        <md-card-header-text>
+                           
+                            <span class="md-headline">OrdenSalida</span>
+                            <span class="md-subhead">Trabajar con OrdenSalidas</span>
+                        </md-card-header-text>
+                    </md-card-header>
+                    <md-card-content>
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>BaseImponible</label>
+                                <input name="baseImponible" ng-model="ordenSalida.baseImponible">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>igv</label>
+                                <input name="igv" ng-model="ordenSalida.igv" required>
+                                <div ng-messages="dForm.igv.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Numero</label>
+                                <input name="numero" ng-model="ordenSalida.numero">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Serie</label>
+                                <input name="serie" ng-model="ordenSalida.serie" required>
+                                <div ng-messages="dForm.serie.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>TipoDocumento</label>
+                                <input name="tipoDocumento" ng-model="ordenSalida.tipoDocumento">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Total</label>
+                                <input name="total" ng-model="ordenSalida.total" required>
+                                <div ng-messages="dForm.total.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Almacen</label>
+                                <input name="almacen" ng-model="ordenSalida.almacen" required>
+                                <div ng-messages="dForm.almacen.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+                       
+                    </md-card-content>
+                    <md-divider></md-divider>
+                    <md-card-actions layout="row" layout-xs="column" layout-align="start center">
+                        <md-card-icon-actions>
+                            <md-button class="md-icon-button" aria-label="toggle">
+                                <md-icon md-svg-icon="md-toggle-arrow"></md-icon>
+                            </md-button>
+                        </md-card-icon-actions>
+                        <md-button type="reset" ng-click="cancel()" class="md-raised">Cancel</md-button>
+                        <md-button type="submit" ng-click="save()" class="md-raised md-primary">
+                            <span ng-show="ordenSalida.id == null">Create</span>
+                            <span ng-show="ordenSalida.id">Update</span>
+                        </md-button>
+                    </md-card-actions>
+                </md-card>
+            </form>
+        </div>
+    </md-content>
+</div>

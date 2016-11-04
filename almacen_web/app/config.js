@@ -280,6 +280,56 @@ app.constant('ROUTERS', [{
             "page": "Farmacias"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/form.html"
+    },  {
+    "repositorio.repositorio.marcas": {
+        "url": "/marcas",
+        "data": {
+            "section": "Repositorio",
+            "page": "Marcas"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/marcas/index.html"
+    },
+    "repositorio.repositorio.autoresNew5": {
+        "url": "/marcas/new",
+        "data": {
+            "section": "Repositorio",
+            "page": "Marcas"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/marcas/form.html"
+    },
+    "repositorio.repositorio.autoresEdit5": {
+        "url": "/marcas/:id/edit",
+        "data": {
+            "section": "Repositorio",
+            "page": "Marcas"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/marcas/form.html"
+    }
+
+},  {
+    "repositorio.repositorio.ordenSalidas": {
+        "url": "/ordenSalidas",
+        "data": {
+            "section": "Repositorio",
+            "page": "OrdenSalidas"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/ordenSalidas/index.html"
+    },
+    "repositorio.repositorio.autoresNew6": {
+        "url": "/ordenSalidas/new",
+        "data": {
+            "section": "Repositorio",
+            "page": "OrdenSalidas"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/ordenSalidas/form.html"
+    },
+    "repositorio.repositorio.autoresEdit7": {
+        "url": "/ordenSalidas/:id/edit",
+        "data": {
+            "section": "Repositorio",
+            "page": "OrdenSalidas"
+        },
+        "templateUrl": "almacen_web_apps/repositorio_web/views/ordenSalidas/form.html"
     }
 
 

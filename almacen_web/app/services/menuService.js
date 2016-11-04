@@ -121,6 +121,13 @@ app
                 state: 'repositorio.repositorio.farmacias',
                 type: 'link'
             },  {
+                title: 'Marcas',
+                state: 'repositorio.repositorio.marcas',
+                type: 'link'
+            },  {
+                title: 'OrdenSalidas',
+                state: 'repositorio.repositorio.ordenSalidas',
+                type: 'link'
 
 
                 
