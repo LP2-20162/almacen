@@ -1,0 +1,77 @@
+[{
+    "xxx": {
+        "url": "/xxx",
+        "templateUrl": "templates/xxx.html"
+    },
+
+}, {
+    "catalogo": {
+        "url": "/catalogo",
+        "views": {
+            "": {
+                "templateUrl": "app/views/layout.html"
+            },
+            "aside": {
+                "templateUrl": "app/views/aside.html"
+            },
+            "content": {
+                "templateUrl": "app/views/content.html"
+            }
+        }
+    },
+    "catalogo.catalogo": {
+        "url": "/catalogo",
+        "template": "<div ui-view ></div>"
+    },
+}, {
+    "catalogo.catalogo.repositorios": {
+        "url": "/repositorios",
+        "data": {
+            "section": "Catálogo",
+            "page": "Categorías"
+        },
+        "templateUrl": "almacen_web_apps/almacen_web/views/repositorios/index.html"
+    },
+    "catalogo.catalogo.repositoriosNew": {
+        "url": "/repositorios/new",
+        "data": {
+            "section": "Catálogo",
+            "page": "Categorías"
+        },
+        "templateUrl": "almacen_web_apps/almacen_web/views/repositorios/form.html"
+    },
+    "catalogo.catalogo.repositoriosEdit": {
+        "url": "/repositorios/:id/edit",
+        "data": {
+            "section": "Catálogo",
+            "page": "Categorías"
+        },
+        "templateUrl": "almacen_web_apps/almacen_web/views/repositorios/form.html"
+    },
+}, {
+    "catalogo.catalogo.farmacias": {
+        "url": "/farmacias",
+        "data": {
+            "section": "Catálogo",
+            "page": "farmacias"
+        },
+        "templateUrl": "almacen_web_apps/almacen_web/views/farmacias/index.html"
+    },
+    "catalogo.catalogo.farmaciasNew": {
+        "url": "/farmacias/new",
+        "data": {
+            "section": "Catálogo",
+            "page": "farmacias"
+        },
+        "templateUrl": "almacen_web_apps/almacen_web/views/farmacias/form.html"
+    },
+    "catalogo.catalogo.farmaciasEdit": {
+        "url": "/farmacias/:id/edit",
+        "data": {
+            "section": "Catálogo",
+            "page": "farmacias"
+        },
+        "templateUrl": "almacen_web_apps/almacen_web/views/farmacias/form.html"
+    }
+
+}]

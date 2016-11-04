@@ -1,0 +1,9 @@
+[2016-11-04 19:35:56] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
+[2016-11-04 14:56:04] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
+[2016-11-04 15:02:02] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
+[2016-11-04 15:05:11] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
+[2016-11-04 15:05:42] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
+[2016-11-04 15:20:52] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
+[2016-11-04 15:32:02] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
+[2016-11-04 15:39:40] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
+[2016-11-04 15:40:32] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated

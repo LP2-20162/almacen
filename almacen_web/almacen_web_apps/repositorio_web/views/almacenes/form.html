@@ -1,0 +1,57 @@
+<div ng-cloak>
+    <md-content class="md-padding" layout-xs="column" layout="row">
+        <div flex-xs flex-gt-xs="100" layout="column">
+            <form name="dForm" role="form" ng-controller="almacenSaveCtrl">
+                <md-card>
+                    <md-card-header>
+                        <md-card-avatar>
+                            <img class="md-user-avatar" src="media/img/list/60.jpeg" />
+                        </md-card-avatar>
+                        <md-card-header-text>
+                            <span class="md-headline">almacen</span>
+                            <span class="md-subhead">Trabajar con almacenes</span>
+                        </md-card-header-text>
+                    </md-card-header>
+                    <md-card-content>
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>PrecioUnitario</label>
+                                <input name="precioUnitario" ng-model="almacen.precioUnitario" required>
+                                <div ng-messages="dForm.precioUnitario.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>StockActual</label>
+                                <input name="stockActual" ng-model="almacen.stockActual">
+                            </md-input-container>
+                        </div>
+                        <md-input-container class="md-block">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>StockMinimo</label>
+                                <input name="stockMinimo" ng-model="almacen.stockMinimo">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Farmacia</label>
+                                <input name="farmacia" ng-model="almacen.farmacia">
+                            </md-input-container>
+                        </md-input-container>
+                    </md-card-content>
+                    <md-divider></md-divider>
+                    <md-card-actions layout="row" layout-xs="column" layout-align="start center">
+                        <md-card-icon-actions>
+                            <md-button class="md-icon-button" aria-label="toggle">
+                                <md-icon md-svg-icon="md-toggle-arrow"></md-icon>
+                            </md-button>
+                        </md-card-icon-actions>
+                        <md-button type="reset" ng-click="cancel()" class="md-raised">Cancel</md-button>
+                        <md-button type="submit" ng-click="save()" class="md-raised md-primary">
+                            <span ng-show="almacen.id == null">Create</span>
+                            <span ng-show="almacen.id">Update</span>
+                        </md-button>
+                    </md-card-actions>
+                </md-card>
+            </form>
+        </div>
+    </md-content>
+</div>
