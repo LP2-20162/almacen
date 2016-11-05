@@ -13,7 +13,7 @@ class Almacen(models.Model):
 
     class Meta:
         verbose_name = "Almacen"
-        verbose_name_plural = "Almacens"
+        verbose_name_plural = "Almacenes"
 
     def __str__(self):
         return self.precioUnitario

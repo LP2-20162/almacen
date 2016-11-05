@@ -20,7 +20,7 @@ class Compra(models.Model):
 
     class Meta:
         verbose_name = "Copra"
-        verbose_name_plural = "Copras"
+        verbose_name_plural = "Compras"
 
     def __str__(self):
         return self.baseImponible
