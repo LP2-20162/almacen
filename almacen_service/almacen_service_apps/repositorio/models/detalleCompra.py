@@ -10,8 +10,8 @@ class DetalleCompra(models.Model):
     detalle = models.CharField(max_length=60)
     fecha = models.DateTimeField(auto_now_add=True)
 
-    producto = models.ForeignKey(Producto, null=True, blank=True)
-    compra = models.ForeignKey(Compra, null=True, blank=True)
+    producto = models.ForeignKey('Producto')
+    compra = models.ForeignKey('Compra')
 
     class Meta:
         verbose_name = "DetalleCompra"

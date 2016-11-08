@@ -1,8 +1,0 @@
-[2016-11-03 15:27:49] [INFO] [ioteca_service_apps.auths_api.user_view:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
-[2016-11-03 15:30:54] [INFO] [ioteca_service_apps.auths_api.user_view:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
-[2016-11-03 15:38:05] [INFO] [ioteca_service_apps.auths_api.user_view:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
-[2016-11-03 17:36:24] [INFO] [almacen_service_apps.auths_api.user_view:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
-[2016-11-03 17:38:44] [INFO] [almacen_service_apps.auths_api.user_view:77] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
-[2016-11-03 17:56:59] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
-[2016-11-03 17:57:37] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
-[2016-11-03 18:03:03] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated

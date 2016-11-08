@@ -9,11 +9,75 @@ app
 
         }),
 
+        Almacen: $resource(url + "almacenes/:id/", { 'id': '@id' }, {
+            "update": { method: 'PUT' },
+            "list": { method: 'GET', isArray: true, params: { query: '@query' } }
+
+        }),
+
         Categoria: $resource(url + "categorias/:id/", { 'id': '@id' }, {
             "update": { method: 'PUT' },
             "list": { method: 'GET', isArray: true, params: { query: '@query' } }
 
         }),
+
+
+
+        Compra: $resource(url + "compras/:id/", { 'id': '@id' }, {
+            "update": { method: 'PUT' },
+            "list": { method: 'GET', isArray: true, params: { query: '@query' } }
+
+        }),
+
+
+        DetalleCompra: $resource(url + "detalleCompras/:id/", { 'id': '@id' }, {
+            "update": { method: 'PUT' },
+            "list": { method: 'GET', isArray: true, params: { query: '@query' } }
+
+        }),
+
+
+
+        Farmacia: $resource(url + "farmacias/:id/", { 'id': '@id' }, {
+            "update": { method: 'PUT' },
+            "list": { method: 'GET', isArray: true, params: { query: '@query' } }
+
+        }),
+ 
+
+        Marca: $resource(url + "marcas/:id/", { 'id': '@id' }, {
+            "update": { method: 'PUT' },
+            "list": { method: 'GET', isArray: true, params: { query: '@query' } }
+
+        }),
+
+
+        OrdenSalida: $resource(url + "ordenSalidas/:id/", { 'id': '@id' }, {
+            "update": { method: 'PUT' },
+            "list": { method: 'GET', isArray: true, params: { query: '@query' } }
+
+        }),
+
+
+
+        Producto: $resource(url + "productos/:id/", { 'id': '@id' }, {
+            "update": { method: 'PUT' },
+            "list": { method: 'GET', isArray: true, params: { query: '@query' } }
+
+        }),
+
+
+        Proveedor: $resource(url + "proveedores/:id/", { 'id': '@id' }, {
+            "update": { method: 'PUT' },
+            "list": { method: 'GET', isArray: true, params: { query: '@query' } }
+
+        }),
+
+
+
+
+
+
         Menu: $resource(url + "menus/:id/", { 'id': '@id' }, {
             "update": { method: 'PUT' },
             //"list": { method: 'GET', isArray: false, params: { query: '@query', page: '@page', page_size: '@page_size' } }

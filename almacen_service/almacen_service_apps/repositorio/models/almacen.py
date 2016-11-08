@@ -9,7 +9,7 @@ class Almacen(models.Model):
     precioUnitario = models.CharField(max_length=60)
     stockActual = models.CharField(max_length=60)
     stockMinimo = models.CharField(max_length=60)
-    farmacia = models.ForeignKey(Farmacia, null=True, blank=True)
+    farmacia = models.ForeignKey('Farmacia')
 
     class Meta:
         verbose_name = "Almacen"

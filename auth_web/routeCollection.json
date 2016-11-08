@@ -24,54 +24,54 @@
         "template": "<div ui-view ></div>"
     },
 }, {
-    "catalogo.catalogo.repositorios": {
-        "url": "/repositorios",
+    "catalogo.catalogo.categorias": {
+        "url": "/categorias",
         "data": {
             "section": "Catálogo",
             "page": "Categorías"
         },
-        "templateUrl": "almacen_web_apps/almacen_web/views/repositorios/index.html"
+        "templateUrl": "ioteca_web_apps/catalogo_web/views/categorias/index.html"
     },
-    "catalogo.catalogo.repositoriosNew": {
-        "url": "/repositorios/new",
+    "catalogo.catalogo.categoriasNew": {
+        "url": "/categorias/new",
         "data": {
             "section": "Catálogo",
             "page": "Categorías"
         },
-        "templateUrl": "almacen_web_apps/almacen_web/views/repositorios/form.html"
+        "templateUrl": "ioteca_web_apps/catalogo_web/views/categorias/form.html"
     },
-    "catalogo.catalogo.repositoriosEdit": {
-        "url": "/repositorios/:id/edit",
+    "catalogo.catalogo.categoriasEdit": {
+        "url": "/categorias/:id/edit",
         "data": {
             "section": "Catálogo",
             "page": "Categorías"
         },
-        "templateUrl": "almacen_web_apps/almacen_web/views/repositorios/form.html"
+        "templateUrl": "ioteca_web_apps/catalogo_web/views/categorias/form.html"
     },
 }, {
-    "catalogo.catalogo.farmacias": {
-        "url": "/farmacias",
+    "catalogo.catalogo.autores": {
+        "url": "/autores",
         "data": {
             "section": "Catálogo",
-            "page": "farmacias"
+            "page": "Autores"
         },
-        "templateUrl": "almacen_web_apps/almacen_web/views/farmacias/index.html"
+        "templateUrl": "ioteca_web_apps/catalogo_web/views/autores/index.html"
     },
-    "catalogo.catalogo.farmaciasNew": {
-        "url": "/farmacias/new",
+    "catalogo.catalogo.autoresNew": {
+        "url": "/autores/new",
         "data": {
             "section": "Catálogo",
-            "page": "farmacias"
+            "page": "Autores"
         },
-        "templateUrl": "almacen_web_apps/almacen_web/views/farmacias/form.html"
+        "templateUrl": "ioteca_web_apps/catalogo_web/views/autores/form.html"
     },
-    "catalogo.catalogo.farmaciasEdit": {
-        "url": "/farmacias/:id/edit",
+    "catalogo.catalogo.autoresEdit": {
+        "url": "/autores/:id/edit",
         "data": {
             "section": "Catálogo",
-            "page": "farmacias"
+            "page": "Autores"
         },
-        "templateUrl": "almacen_web_apps/almacen_web/views/farmacias/form.html"
+        "templateUrl": "ioteca_web_apps/catalogo_web/views/autores/form.html"
     }
 
 }]

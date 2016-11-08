@@ -13,7 +13,7 @@ class OrdenSalida(models.Model):
     tipoDocumento = models.CharField(max_length=60)
     total = models.CharField(max_length=60)
 
-    almacen = models.ForeignKey(Almacen, null=True, blank=True)
+    almacen = models.ForeignKey('Almacen')
 
     class Meta:
         verbose_name = "OrdenSalida"

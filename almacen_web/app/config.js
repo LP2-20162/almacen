@@ -128,11 +128,11 @@ app.constant('ROUTERS', [{
         "template": "<div ui-view ></div>"
     }
 }, {
-    "repositorio.repositorio.almacenes": {
-        "url": "/almacenes",
+    "repositorio.repositorio.almacen": {
+        "url": "/almacen",
         "data": {
             "section": "Repositorio",
-            "page": "Almacenes"
+            "page": "Almacen"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/almacenes/index.html"
     },
@@ -153,15 +153,15 @@ app.constant('ROUTERS', [{
         "templateUrl": "almacen_web_apps/repositorio_web/views/almacenes/form.html"
     }
 }, {
-    "repositorio.repositorio.categorias": {
-        "url": "/categorias",
+    "repositorio.repositorio.categoria": {
+        "url": "/categoria",
         "data": {
             "section": "Repositorio",
-            "page": "Categorias"
+            "page": "Categoria"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/categorias/index.html"
     },
-    "repositorio.repositorio.autoresNew": {
+    "repositorio.repositorio.categoriasNew": {
         "url": "/categorias/new",
         "data": {
             "section": "Repositorio",
@@ -179,15 +179,15 @@ app.constant('ROUTERS', [{
     }
 
 },  {
-    "repositorio.repositorio.compras": {
-        "url": "/compras",
+    "repositorio.repositorio.compra": {
+        "url": "/compra",
         "data": {
             "section": "Repositorio",
             "page": "Compras"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/compras/index.html"
     },
-    "repositorio.repositorio.autoresNew1": {
+    "repositorio.repositorio.comprasNew": {
         "url": "/compras/new",
         "data": {
             "section": "Repositorio",
@@ -195,7 +195,7 @@ app.constant('ROUTERS', [{
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/compras/form.html"
     },
-    "repositorio.repositorio.autoresEdit1": {
+    "repositorio.repositorio.comprasEdit": {
         "url": "/compras/:id/edit",
         "data": {
             "section": "Repositorio",
@@ -205,15 +205,15 @@ app.constant('ROUTERS', [{
     }
     
 },  {
-    "repositorio.repositorio.detalleCompras": {
-        "url": "/detalleCompras",
+    "repositorio.repositorio.detalleCompra": {
+        "url": "/detalleCompra",
         "data": {
             "section": "Repositorio",
             "page": "DetalleCompras"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/detalleCompras/index.html"
     },
-    "repositorio.repositorio.autoresNew2": {
+    "repositorio.repositorio.detalleComprasNew": {
         "url": "/detalleCompras/new",
         "data": {
             "section": "Repositorio",
@@ -221,7 +221,7 @@ app.constant('ROUTERS', [{
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/detalleCompras/form.html"
     },
-    "repositorio.repositorio.autoresEdit2": {
+    "repositorio.repositorio.detalleComprasEdit": {
         "url": "/detalleCompras/:id/edit",
         "data": {
             "section": "Repositorio",
@@ -230,42 +230,17 @@ app.constant('ROUTERS', [{
         "templateUrl": "almacen_web_apps/repositorio_web/views/detalleCompras/form.html"
     }
 
-},  {
-    "repositorio.repositorio.detalleOses": {
-        "url": "/detalleOses",
-        "data": {
-            "section": "Repositorio",
-            "page": "DetalleOses"
-        },
-        "templateUrl": "almacen_web_apps/repositorio_web/views/detalleOses/index.html"
-    },
-    "repositorio.repositorio.autoresNew3": {
-        "url": "/detalleOses/new",
-        "data": {
-            "section": "Repositorio",
-            "page": "DetalleOses"
-        },
-        "templateUrl": "almacen_web_apps/repositorio_web/views/detalleOses/form.html"
-    },
-    "repositorio.repositorio.autoresEdit3": {
-        "url": "/detalleOses/:id/edit",
-        "data": {
-            "section": "Repositorio",
-            "page": "DetalleOses"
-        },
-        "templateUrl": "almacen_web_apps/repositorio_web/views/detalleOses/form.html"
-    }
 
 },  {
-    "repositorio.repositorio.farmacias": {
-        "url": "/farmacias",
+    "repositorio.repositorio.farmacia": {
+        "url": "/farmacia",
         "data": {
             "section": "Repositorio",
             "page": "Farmacias"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/index.html"
     },
-    "repositorio.repositorio.autoresNew4": {
+    "repositorio.repositorio.farmaciaNew": {
         "url": "/farmacias/new",
         "data": {
             "section": "Repositorio",
@@ -273,7 +248,7 @@ app.constant('ROUTERS', [{
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/form.html"
     },
-    "repositorio.repositorio.autoresEdit4": {
+    "repositorio.repositorio.farmaciasEdit": {
         "url": "/farmacias/:id/edit",
         "data": {
             "section": "Repositorio",
@@ -282,15 +257,15 @@ app.constant('ROUTERS', [{
         "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/form.html"
     }
 },  {
-    "repositorio.repositorio.marcas": {
-        "url": "/marcas",
+    "repositorio.repositorio.marca": {
+        "url": "/marca",
         "data": {
             "section": "Repositorio",
             "page": "Marcas"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/marcas/index.html"
     },
-    "repositorio.repositorio.autoresNew5": {
+    "repositorio.repositorio.marcasNew": {
         "url": "/marcas/new",
         "data": {
             "section": "Repositorio",
@@ -298,7 +273,7 @@ app.constant('ROUTERS', [{
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/marcas/form.html"
     },
-    "repositorio.repositorio.autoresEdit5": {
+    "repositorio.repositorio.marcasEdit": {
         "url": "/marcas/:id/edit",
         "data": {
             "section": "Repositorio",
@@ -308,15 +283,15 @@ app.constant('ROUTERS', [{
     }
 
 },  {
-    "repositorio.repositorio.ordenSalidas": {
-        "url": "/ordenSalidas",
+    "repositorio.repositorio.ordenSalida": {
+        "url": "/ordenSalida",
         "data": {
             "section": "Repositorio",
             "page": "OrdenSalidas"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/ordenSalidas/index.html"
     },
-    "repositorio.repositorio.autoresNew6": {
+    "repositorio.repositorio.ordenSalidasNew": {
         "url": "/ordenSalidas/new",
         "data": {
             "section": "Repositorio",
@@ -324,7 +299,7 @@ app.constant('ROUTERS', [{
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/ordenSalidas/form.html"
     },
-    "repositorio.repositorio.autoresEdit7": {
+    "repositorio.repositorio.ordenSalidasEdit": {
         "url": "/ordenSalidas/:id/edit",
         "data": {
             "section": "Repositorio",
@@ -334,15 +309,15 @@ app.constant('ROUTERS', [{
     }
 
 },  {
-    "repositorio.repositorio.productos": {
-        "url": "/productos",
+    "repositorio.repositorio.producto": {
+        "url": "/producto",
         "data": {
             "section": "Repositorio",
             "page": "Productos"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/productos/index.html"
     },
-    "repositorio.repositorio.autoresNew7": {
+    "repositorio.repositorio.productosNew": {
         "url": "/productos/new",
         "data": {
             "section": "Repositorio",
@@ -350,7 +325,7 @@ app.constant('ROUTERS', [{
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/productos/form.html"
     },
-    "repositorio.repositorio.autoresEdit6": {
+    "repositorio.repositorio.productoEdit": {
         "url": "/productos/:id/edit",
         "data": {
             "section": "Repositorio",
@@ -360,15 +335,15 @@ app.constant('ROUTERS', [{
     }
 
 },  {
-    "repositorio.repositorio.proveedores": {
-        "url": "/proveedores",
+    "repositorio.repositorio.proveedor": {
+        "url": "/proveedor",
         "data": {
             "section": "Repositorio",
             "page": "Proveedores"
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/proveedores/index.html"
     },
-    "repositorio.repositorio.autoresNew8": {
+    "repositorio.repositorio.proveedorNew": {
         "url": "/proveedores/new",
         "data": {
             "section": "Repositorio",
@@ -376,7 +351,7 @@ app.constant('ROUTERS', [{
         },
         "templateUrl": "almacen_web_apps/repositorio_web/views/proveedores/form.html"
     },
-    "repositorio.repositorio.autoresEdit8": {
+    "repositorio.repositorio.proveedorEdit": {
         "url": "/proveedores/:id/edit",
         "data": {
             "section": "Repositorio",

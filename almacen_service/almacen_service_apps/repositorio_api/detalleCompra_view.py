@@ -3,19 +3,19 @@ from django.db.models import Q
 from operator import __or__ as OR
 from functools import reduce
 
-from almacen_service_apps.repositorio.models.farmacia import Farmacia
+from almacen_service_apps.repositorio.models.detalleCompra import DetalleCompra
 
 
-class FarmaciaSerializer(serializers.ModelSerializer):
+class DetalleCompraSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Farmacia
+        model = DetalleCompra
         fields = '__all__'
 
 
-class FarmaciaViewSet(viewsets.ModelViewSet):
-    queryset = Farmacia.objects.all()
-    serializer_class = FarmaciaSerializer
+class DetalleCompraViewSet(viewsets.ModelViewSet):
+    queryset = DetalleCompra.objects.all()
+    serializer_class = DetalleCompraSerializer
 
     def get_queryset(self):
         query = self.request.query_params.get('query', '')

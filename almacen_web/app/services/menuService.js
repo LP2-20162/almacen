@@ -98,43 +98,39 @@ app
             state: 'repositorio.repositorio',
             menu_items: [{
                 title: 'Almacenes',
-                state: 'repositorio.repositorio.almacenes',
+                state: 'repositorio.repositorio.almacen',
                 type: 'link'
             }, {
                 title: 'Categorias',
-                state: 'repositorio.repositorio.categorias',
+                state: 'repositorio.repositorio.categoria',
                 type: 'link'
             }, {
                 title: 'Compras',
-                state: 'repositorio.repositorio.compras',
+                state: 'repositorio.repositorio.compra',
                 type: 'link'
             },  {
                 title: 'DetalleCompras',
-                state: 'repositorio.repositorio.detalleCompras',
-                type: 'link'
-            },  {
-                title: 'DetalleOses',
-                state: 'repositorio.repositorio.detalleOses',
+                state: 'repositorio.repositorio.detalleCompra',
                 type: 'link'
             },  {
                 title: 'Farmacias',
-                state: 'repositorio.repositorio.farmacias',
+                state: 'repositorio.repositorio.farmacia',
                 type: 'link'
             },  {
                 title: 'Marcas',
-                state: 'repositorio.repositorio.marcas',
+                state: 'repositorio.repositorio.marca',
                 type: 'link'
             },  {
                 title: 'OrdenSalidas',
-                state: 'repositorio.repositorio.ordenSalidas',
+                state: 'repositorio.repositorio.ordenSalida',
                 type: 'link'
             },  {
                 title: 'Productos',
-                state: 'repositorio.repositorio.productos',
+                state: 'repositorio.repositorio.producto',
                 type: 'link'
             },  {
                 title: 'Proveedores',
-                state: 'repositorio.repositorio.proveedores',
+                state: 'repositorio.repositorio.proveedor',
                 type: 'link'
             }  ]
         }]

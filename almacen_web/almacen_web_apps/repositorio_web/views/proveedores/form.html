@@ -1,7 +1,7 @@
 <div ng-cloak>
     <md-content class="md-padding" layout-xs="column" layout="row">
         <div flex-xs flex-gt-xs="100" layout="column">
-            <form name="dForm" role="form" ng-controller="repositorioSaveCtrl">
+            <form name="dForm" role="form" ng-controller="ProveedorSaveCtrl">
                 <md-card>
                     <md-card-header>
                         <md-card-avatar>
@@ -17,22 +17,22 @@
                         <div layout-gt-sm="row">
                             <md-input-container class="md-block" flex-gt-sm>
                                 <label>Direccion</label>
-                                <input name="direccion" ng-model="repositorio.direccion">
+                                <input name="direccion" ng-model="proveedor.direccion">
                             </md-input-container>
                             <md-input-container class="md-block" flex-gt-sm>
                                 <label>razonSocial</label>
-                                <input name="razonSocial" ng-model="repositorio.razonSocial" required>
+                                <input name="razonSocial" ng-model="proveedor.razonSocial" required>
                                 <div ng-messages="dForm.razonSocial.$error">
                                     <div ng-message="required">This is required.</div>
                                 </div>
                             </md-input-container>
                             <md-input-container class="md-block" flex-gt-sm>
                                 <label>RepresentanteLegal</label>
-                                <input name="representanteLegal" ng-model="repositorio.representanteLegal">
+                                <input name="representanteLegal" ng-model="proveedor.representanteLegal">
                             </md-input-container>
                             <md-input-container class="md-block" flex-gt-sm>
                                 <label>Ruc</label>
-                                <input name="ruc" ng-model="repositorio.ruc">
+                                <input name="ruc" ng-model="proveedor.ruc">
                             </md-input-container>
                         </div>
                       
@@ -46,8 +46,8 @@
                         </md-card-icon-actions>
                         <md-button type="reset" ng-click="cancel()" class="md-raised">Cancel</md-button>
                         <md-button type="submit" ng-click="save()" class="md-raised md-primary">
-                            <span ng-show="repositorio.id == null">Create</span>
-                            <span ng-show="repositorio.id">Update</span>
+                            <span ng-show="proveedor.id == null">Create</span>
+                            <span ng-show="proveedor.id">Update</span>
                         </md-button>
                     </md-card-actions>
                 </md-card>

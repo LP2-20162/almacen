@@ -11,7 +11,6 @@ class ProductoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Producto
         fields = '__all__'
-        # fields = ('url', 'username', 'email', 'is_staff')
 
 
 class ProductoViewSet(viewsets.ModelViewSet):

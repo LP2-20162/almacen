@@ -1,7 +1,7 @@
 <div ng-cloak>
     <md-content class="md-padding" layout-xs="column" layout="row">
         <div flex-xs flex-gt-xs="100" layout="column">
-            <form name="dForm" role="form" ng-controller="repositorioSaveCtrl">
+            <form name="dForm" role="form" ng-controller="ProductoSaveCtrl">
                 <md-card>
                     <md-card-header>
                         <md-card-avatar>
@@ -18,27 +18,27 @@
                             
                             <md-input-container class="md-block" flex-gt-sm>
                                 <label>Nombre</label>
-                                <input name="nombre" ng-model="repositorio.nombre" required>
+                                <input name="nombre" ng-model="producto.nombre" required>
                                 <div ng-messages="dForm.nombre.$error">
                                     <div ng-message="required">This is required.</div>
                                 </div>
                             </md-input-container>
                             <md-input-container class="md-block" flex-gt-sm>
                                 <label>Código</label>
-                                <input name="codigo" ng-model="repositorio.codigo">
+                                <input name="codigo" ng-model="producto.codigo">
                             </md-input-container>
                             <md-input-container class="md-block" flex-gt-sm>
                                 <label>Categoria</label>
-                                <input name="categoria" ng-model="repositorio.categoria">
+                                <input name="categoria" ng-model="producto.categoria">
                             </md-input-container>
                             <md-input-container class="md-block" flex-gt-sm>
                                 <label>Marca</label>
-                                <input name="marca" ng-model="repositorio.marca">
+                                <input name="marca" ng-model="producto.marca">
                             </md-input-container>
                             
                             <md-input-container class="md-block" flex-gt-sm>
                                 <label>almacen</label>
-                                <input name="almacen" ng-model="repositorio.almacen">
+                                <input name="almacen" ng-model="producto.almacen">
                             </md-input-container>
                             
                         </div>
@@ -53,8 +53,8 @@
                         </md-card-icon-actions>
                         <md-button type="reset" ng-click="cancel()" class="md-raised">Cancel</md-button>
                         <md-button type="submit" ng-click="save()" class="md-raised md-primary">
-                            <span ng-show="repositorio.id == null">Create</span>
-                            <span ng-show="repositorio.id">Update</span>
+                            <span ng-show="producto.id == null">Create</span>
+                            <span ng-show="producto.id">Update</span>
                         </md-button>
                     </md-card-actions>
                 </md-card>

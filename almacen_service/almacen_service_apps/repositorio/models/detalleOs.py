@@ -10,8 +10,8 @@ class DetalleOs(models.Model):
     cantidad = models.CharField(max_length=60)
     puSalida = models.CharField(max_length=60)
 
-    ordenSalida = models.ForeignKey(OrdenSalida, null=True, blank=True)
-    producto = models.ForeignKey(Producto, null=True, blank=True)
+    ordenSalida = models.ForeignKey('OrdenSalida')
+    producto = models.ForeignKey('Producto')
 
     class Meta:
         verbose_name = "DetalleOs"

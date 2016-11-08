@@ -25,29 +25,29 @@ class RouterView(APIView):
         """
         Insertar json en el campo router_json
     {
-        "catalogo.catalogo.categorias": {
-            "url": "/categorias",
+        "repositorio.repositorio.repositorios": {
+            "url": "/repositorios",
             "data": {
-                "section": "Catálogo",
-                "page": "Categorías"
+                "section": "Repositorio",
+                "page": "Repositorios"
             },
-            "templateUrl": "_apps/catalogo_web/views/categorias/index.html"
+            "templateUrl": "_apps/repositorio_web/views/repositorios/index.html"
         },
-        "catalogo.catalogo.categoriasEdit": {
-            "url": "/categorias/:id/edit",
+        "repositorio.repositorio.repositoriosEdit": {
+            "url": "/repositorios/:id/edit",
             "data": {
-                "section": "Catálogo",
-                "page": "Categorías"
+                "section": "Repositorio",
+                "page": "Repositorios"
             },
-            "templateUrl": "_apps/catalogo_web/views/categorias/form.html"
+            "templateUrl": "_apps/repositorio_web/views/repositorios/form.html"
         },
-        "catalogo.catalogo.categoriasNew": {
-            "url": "/categorias/new",
+        "repositorio.repositorio.repositoriosNew": {
+            "url": "/repositorios/new",
             "data": {
-                "section": "Catálogo",
-                "page": "Categorías"
+                "section": "Repositorio",
+                "page": "Repositorios"
             },
-            "templateUrl": "_apps/catalogo_web/views/categorias/form.html"
+            "templateUrl": "_apps/repositorio_web/views/repositorios/form.html"
         }
     }
         """
@@ -61,7 +61,7 @@ class RouterView(APIView):
         if router_list:
             for router in router_list:
                 # '{"key": "value"}'
-                # '{\r\n    \"catalogo\": {\r\n \"url\": \"/catalogo\" }\r\n}'
+                # '{\r\n    \"repositorio\": {\r\n \"url\": \"/repositorio\" }\r\n}'
                 if router:
                     router_json.append(
                         json.loads(router)

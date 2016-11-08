@@ -4,7 +4,7 @@ app
 // =========================================================================
     .controller("DetalleCompraCtrl", function($scope, $state, $stateParams, repositorioService, $window, $mdDialog, $log, toastr) {
     //Valores iniciales
-    $scope.fields = 'nombre';
+    $scope.fields = 'name,codename';
     var params = {};
     $scope.lista = [];
     $scope.detalleCompra = {};
@@ -12,8 +12,8 @@ app
     $scope.list = function(params) {
         $scope.isLoading = true;
         repositorioService.DetalleCompra.query(params, function(r) {
-            $scope.lista = r.results;
-            $scope.options = r.options;
+            $scope.lista = r;
+            //$scope.options = r.options;
             $scope.isLoading = false;
         }, function(err) {
             $log.log("Error in list:" + JSON.stringify(err));

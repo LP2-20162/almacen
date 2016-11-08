@@ -1,0 +1,3 @@
+[2016-11-08 13:52:36] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
+[2016-11-08 13:56:31] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated
+[2016-11-08 13:57:27] [INFO] [almacen_service_apps.auths_api.user_view:78] [/api/auths/localuserinfo/] [127.0.0.1] [hernan] [GET] User is authenticated

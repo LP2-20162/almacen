@@ -29,12 +29,10 @@
                         
                 <md-card-content>
                
-                <md-progress-circular md-mode="indeterminate" ng-show="isLoading"></md-progress-circular>
-  
-
                     
                     <table table-responsive>
                         
+                         <md-progress-linear layout-fill md-mode="indeterminate" ng-hide="!isLoading"></md-progress-linear>
                         
                         <thead md-on-reorder="onReorder">
                             <tr>
@@ -59,7 +57,7 @@
                         </thead>
                         <tbody>
                             <tr ng-repeat="d in lista">
-                                <td> {{ (options.page - 1) * options.page_size +$index +1 }} </td>
+                                <td> {{ $index + 1 }} </td>
                                 <td> {{ d.baseImponible }} </td>
                                 <td> {{ d.fechaDocumento }} </td>
                                 <td> {{ d.igv }} </td>

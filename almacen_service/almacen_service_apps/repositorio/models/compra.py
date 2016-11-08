@@ -15,11 +15,11 @@ class Compra(models.Model):
     tipoDocumento = models.CharField(max_length=60)
     total = models.CharField(max_length=60)
 
-    proveedor = models.ForeignKey(Proveedor, null=True, blank=True)
-    almacen = models.ForeignKey(Almacen, null=True, blank=True)
+    proveedor = models.ForeignKey('Proveedor')
+    almacen = models.ForeignKey('Almacen')
 
     class Meta:
-        verbose_name = "Copra"
+        verbose_name = "Compra"
         verbose_name_plural = "Compras"
 
     def __str__(self):

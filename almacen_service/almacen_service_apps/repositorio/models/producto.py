@@ -12,7 +12,7 @@ class Producto(models.Model):
     codigo = models.CharField(max_length=60)
     categoria = models.ForeignKey(Categoria, null=True, blank=True)
     marca = models.ForeignKey(Marca, null=True, blank=True)
-    almacen = models.ForeignKey(Almacen, null=True, blank=True)
+    almacen = models.ForeignKey('Almacen')
 
     class Meta:
         verbose_name = "Producto"

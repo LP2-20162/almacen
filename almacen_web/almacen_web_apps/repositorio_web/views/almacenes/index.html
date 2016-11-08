@@ -7,7 +7,7 @@
                         <img class="md-user-avatar" src="media/img/list/60.jpeg" />
                     </md-card-avatar>
                     <md-card-header-text>
-                        <span class="md-headline">Almacens</span>
+                        <span class="md-headline">Almacenes</span>
                         <span class="md-subhead">Trabajar con almacenes</span>
                     </md-card-header-text>
                 </md-card-header>
@@ -49,7 +49,7 @@
                         </thead>
                         <tbody>
                             <tr ng-repeat="d in lista">
-                                <td> {{ (options.page - 1) * options.page_size +$index +1 }} </td>
+                                <td> {{ $index + 1 }} </td>
                                 <td> {{ d.precioUnitario }} </td>
                                 <td> {{ d.stockActual }} </td>
                                 <td> {{ d.stockMinimo }} </td>
