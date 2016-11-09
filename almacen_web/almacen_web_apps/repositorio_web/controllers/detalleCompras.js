@@ -4,7 +4,7 @@ app
 // =========================================================================
     .controller("DetalleCompraCtrl", function($scope, $state, $stateParams, repositorioService, $window, $mdDialog, $log, toastr) {
     //Valores iniciales
-    $scope.fields = 'name,codename';
+    $scope.fields = 'detalle';
     var params = {};
     $scope.lista = [];
     $scope.detalleCompra = {};
@@ -37,7 +37,7 @@ app
         if ($window.confirm("Seguro?")) {
             repositorioService.DetalleCompra.delete({ id: d.id }, function(r) {
                 $log.log("Se eliminó detalleCompra:" + JSON.stringify(d));
-                toastr.success('Se eliminó detalleCompra ' + d.nombre, 'DetalleCompra');
+                toastr.success('Se eliminó detalleCompra ' + d.detalle, 'DetalleCompra');
                 $scope.list(params);
             }, function(err) {
                 $log.log("Error in delete:" + JSON.stringify(err));
@@ -71,7 +71,7 @@ app
         if ($scope.detalleCompra.id) {
             repositorioService.DetalleCompra.update({ id: $scope.detalleCompra.id }, $scope.detalleCompra, function(r) {
                 $log.log("r: " + JSON.stringify(r));
-                toastr.success('Se editó detalleCompra ' + r.nombre, 'DetalleCompra');
+                toastr.success('Se editó detalleCompra ' + r.detalle, 'DetalleCompra');
                 $state.go('repositorio.repositorio.detalleCompras');
             }, function(err) {
                 $log.log("Error in update:" + JSON.stringify(err));
@@ -80,7 +80,7 @@ app
         } else {
             repositorioService.DetalleCompra.save($scope.detalleCompra, function(r) {
                 $log.log("r: " + JSON.stringify(r));
-                toastr.success('Se insertó detalleCompra ' + r.nombre, 'DetalleCompra');
+                toastr.success('Se insertó detalleCompra ' + r.detalle, 'DetalleCompra');
                 $state.go('repositorio.repositorio.detalleCompras');
             }, function(err) {
                 $log.log("Error in save:" + JSON.stringify(err));

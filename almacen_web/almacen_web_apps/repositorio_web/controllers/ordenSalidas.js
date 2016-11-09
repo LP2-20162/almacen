@@ -4,7 +4,7 @@ app
 // =========================================================================
     .controller("OrdenSalidaCtrl", function($scope, $state, $stateParams, repositorioService, $window, $mdDialog, $log, toastr) {
     //Valores iniciales
-    $scope.fields = 'name,codename';
+    $scope.fields = 'baseImponible';
     var params = {};
     $scope.lista = [];
     $scope.ordenSalida = {};
@@ -40,7 +40,7 @@ app
         if ($window.confirm("Seguro?")) {
             repositorioService.OrdenSalida.delete({ id: d.id }, function(r) {
                 $log.log("Se eliminó la ordenSalida:" + JSON.stringify(d));
-                toastr.success('Se eliminó la ordenSalida ' + d.nombre, 'OrdenSalida');
+                toastr.success('Se eliminó la ordenSalida ' + d.baseImponible, 'OrdenSalida');
                 $scope.list(params);
             }, function(err) {
                 $log.log("Error in delete:" + JSON.stringify(err));
@@ -74,7 +74,7 @@ app
         if ($scope.ordenSalida.id) {
             repositorioService.OrdenSalida.update({ id: $scope.ordenSalida.id }, $scope.ordenSalida, function(r) {
                 $log.log("r: " + JSON.stringify(r));
-                toastr.success('Se editó la ordenSalida ' + r.nombre, 'OrdenSalida');
+                toastr.success('Se editó la ordenSalida ' + r.baseImponible, 'OrdenSalida');
                 $state.go('repositorio.repositorio.ordenSalidas');
             }, function(err) {
                 $log.log("Error in update:" + JSON.stringify(err));
@@ -83,7 +83,7 @@ app
         } else {
             repositorioService.OrdenSalida.save($scope.ordenSalida, function(r) {
                 $log.log("r: " + JSON.stringify(r));
-                toastr.success('Se insertó la ordenSalida ' + r.nombre, 'OrdenSalida');
+                toastr.success('Se insertó la ordenSalida ' + r.baseImponible, 'OrdenSalida');
                 $state.go('repositorio.repositorio.ordenSalidas');
             }, function(err) {
                 $log.log("Error in save:" + JSON.stringify(err));

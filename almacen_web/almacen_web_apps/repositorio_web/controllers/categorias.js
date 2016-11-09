@@ -4,7 +4,7 @@ app
 // =========================================================================
     .controller("CategoriaCtrl", function($scope, $state, $stateParams, repositorioService, $window, $mdDialog, $log, toastr) {
     //Valores iniciales
-    $scope.fields = 'name,codename';
+    $scope.fields = 'nombre';
     var params = {};
     $scope.lista = [];
     $scope.categoria = {};

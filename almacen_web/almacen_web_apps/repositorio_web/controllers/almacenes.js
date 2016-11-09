@@ -4,7 +4,7 @@ app
 // =========================================================================
     .controller("AlmacenCtrl", function($scope, $state, $stateParams, repositorioService, $window, $mdDialog, $log, toastr) {
     //Valores iniciales
-    $scope.fields = 'name,codename';
+    $scope.fields = 'precioUnitario';
     var params = {};
     $scope.lista = [];
     $scope.almacen = {};
@@ -37,7 +37,7 @@ app
         if ($window.confirm("Seguro?")) {
             repositorioService.Almacen.delete({ id: d.id }, function(r) {
                 $log.log("Se eliminó almacen:" + JSON.stringify(d));
-                toastr.success('Se eliminó almacen ' + d.nombre, 'Almacen');
+                toastr.success('Se eliminó almacen ' + d.precioUnitario, 'Almacen');
                 $scope.list(params);
             }, function(err) {
                 $log.log("Error in delete:" + JSON.stringify(err));
@@ -71,7 +71,7 @@ app
         if ($scope.almacen.id) {
             repositorioService.Almacen.update({ id: $scope.almacen.id }, $scope.almacen, function(r) {
                 $log.log("r: " + JSON.stringify(r));
-                toastr.success('Se editó almacen ' + r.nombre, 'Almacen');
+                toastr.success('Se editó almacen ' + r.precioUnitario, 'Almacen');
                 $state.go('repositorio.repositorio.almacenes');
             }, function(err) {
                 $log.log("Error in update:" + JSON.stringify(err));
@@ -80,7 +80,7 @@ app
         } else {
             repositorioService.Almacen.save($scope.almacen, function(r) {
                 $log.log("r: " + JSON.stringify(r));
-                toastr.success('Se insertó almacen ' + r.nombre, 'Almacen');
+                toastr.success('Se insertó almacen ' + r.precioUnitario, 'Almacen');
                 $state.go('repositorio.repositorio.almacenes');
             }, function(err) {
                 $log.log("Error in save:" + JSON.stringify(err));

@@ -4,7 +4,7 @@ app
 // =========================================================================
     .controller("ProveedorCtrl", function($scope, $state, $stateParams, repositorioService, $window, $mdDialog, $log, toastr) {
     //Valores iniciales
-    $scope.fields = 'name,codename';
+    $scope.fields = 'direccion';
     var params = {};
     $scope.lista = [];
     $scope.proveedor = {};
@@ -40,7 +40,7 @@ app
         if ($window.confirm("Seguro?")) {
             repositorioService.Proveedor.delete({ id: d.id }, function(r) {
                 $log.log("Se eliminó la proveedor:" + JSON.stringify(d));
-                toastr.success('Se eliminó la proveedor ' + d.nombre, 'Proveedor');
+                toastr.success('Se eliminó la proveedor ' + d.direccion, 'Proveedor');
                 $scope.list(params);
             }, function(err) {
                 $log.log("Error in delete:" + JSON.stringify(err));
@@ -74,7 +74,7 @@ app
         if ($scope.proveedor.id) {
             repositorioService.Proveedor.update({ id: $scope.proveedor.id }, $scope.proveedor, function(r) {
                 $log.log("r: " + JSON.stringify(r));
-                toastr.success('Se editó la proveedor ' + r.nombre, 'Proveedor');
+                toastr.success('Se editó la proveedor ' + r.direccion, 'Proveedor');
                 $state.go('repositorio.repositorio.proveedores');
             }, function(err) {
                 $log.log("Error in update:" + JSON.stringify(err));
@@ -83,7 +83,7 @@ app
         } else {
             repositorioService.Proveedor.save($scope.proveedor, function(r) {
                 $log.log("r: " + JSON.stringify(r));
-                toastr.success('Se insertó la proveedor ' + r.nombre, 'Proveedor');
+                toastr.success('Se insertó la proveedor ' + r.direccion, 'Proveedor');
                 $state.go('repositorio.repositorio.proveedores');
             }, function(err) {
                 $log.log("Error in save:" + JSON.stringify(err));

@@ -4,7 +4,7 @@ app
 // =========================================================================
     .controller("CompraCtrl", function($scope, $state, $stateParams, repositorioService, $window, $mdDialog, $log, toastr) {
     //Valores iniciales
-    $scope.fields = 'name,codename';
+    $scope.fields = 'baseImponible';
     var params = {};
     $scope.lista = [];
     $scope.compra = {};
@@ -37,7 +37,7 @@ app
         if ($window.confirm("Seguro?")) {
             repositorioService.Compra.delete({ id: d.id }, function(r) {
                 $log.log("Se eliminó compra:" + JSON.stringify(d));
-                toastr.success('Se eliminó compra ' + d.nombre, 'Compra');
+                toastr.success('Se eliminó compra ' + d.baseImponible, 'Compra');
                 $scope.list(params);
             }, function(err) {
                 $log.log("Error in delete:" + JSON.stringify(err));
@@ -71,7 +71,7 @@ app
         if ($scope.compra.id) {
             repositorioService.Compra.update({ id: $scope.compra.id }, $scope.compra, function(r) {
                 $log.log("r: " + JSON.stringify(r));
-                toastr.success('Se editó compra ' + r.nombre, 'Compra');
+                toastr.success('Se editó compra ' + r.baseImponible, 'Compra');
                 $state.go('repositorio.repositorio.compras');
             }, function(err) {
                 $log.log("Error in update:" + JSON.stringify(err));
@@ -80,7 +80,7 @@ app
         } else {
             repositorioService.Compra.save($scope.compra, function(r) {
                 $log.log("r: " + JSON.stringify(r));
-                toastr.success('Se insertó compra ' + r.nombre, 'Compra');
+                toastr.success('Se insertó compra ' + r.baseImponible, 'Compra');
                 $state.go('repositorio.repositorio.compras');
             }, function(err) {
                 $log.log("Error in save:" + JSON.stringify(err));
