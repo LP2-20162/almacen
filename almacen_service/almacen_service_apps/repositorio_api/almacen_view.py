@@ -4,6 +4,9 @@ from almacen_service_apps.repositorio.models.almacen import Almacen
 
 class AlmacenSerializer(serializers.ModelSerializer):
 
+    fm_nombre = serializers.ReadOnlyField(
+        source='farmacia.nombre')
+
     class Meta:
         model = Almacen
         fields = '__all__'
