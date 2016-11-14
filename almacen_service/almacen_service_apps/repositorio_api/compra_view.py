@@ -5,11 +5,11 @@ from almacen_service_apps.repositorio.models.compra import Compra
 
 class CompraSerializer(serializers.ModelSerializer):
 
-    pr_nombre = serializers.ReadOnlyField(
-        source='proveedor.id')
+    pr_direccion = serializers.ReadOnlyField(
+        source='proveedor.direccion')
 
-    al_nombre = serializers.ReadOnlyField(
-        source='almacen.id')
+    al_precioUnitario = serializers.ReadOnlyField(
+        source='almacen.precioUnitario')
 
     class Meta:
         model = Compra
